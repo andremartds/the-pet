@@ -4,11 +4,15 @@ export interface CreatePetRepo {
   create: (params: CreatePetRepo.Params) => CreatePetRepo.Result
 }
 
+export interface RemovePetRepo {
+  remove: (params: string) => boolean
+}
+
 export interface FindAllPetRepo {
   find: () => FindAllRepo.Result
 }
 
-export type PetRepository = CreatePetRepo & FindAllPetRepo
+export type PetRepository = CreatePetRepo & FindAllPetRepo & RemovePetRepo
 
 export namespace CreatePetRepo {
   export type Params = {

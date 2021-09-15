@@ -1,4 +1,4 @@
-export const pets:any[] =[
+export let pets:any[] =[
   {
     id: 'sadsad-asdsad-sdsa',
     name: 'Dog 1',
