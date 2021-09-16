@@ -5,15 +5,13 @@ export interface CreatePet {
 export namespace CreatePet {
   export type params = {
     name: string;
-    breed: string;
     kind: string;
-    custumerName: string
+    customerName: string
   }
 
   export type Result = {
     id: string;
-    breed: string;
     kind: string;
-    custumerName: string
+    customerName: string
   }
 }

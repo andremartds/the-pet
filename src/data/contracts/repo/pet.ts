@@ -17,17 +17,15 @@ export type PetRepository = CreatePetRepo & FindAllPetRepo & RemovePetRepo
 export namespace CreatePetRepo {
   export type Params = {
     name: string;
-    breed: string;
     kind: string;
-    custumerName: string
+    customerName: string
   }
 
   export type Result = {
     id: string;
     name: string;
-    breed: string;
     kind: string;
-    custumerName: string
+    customerName: string
   }
 }
 
